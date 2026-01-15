@@ -1,33 +1,39 @@
 :root.theme-light {
-  --background-image: url("../images/cover-image-light.png");
-  --accent-color: #ff8dcb;
-  --accent-color-opacity: #32312d66;
-  --text-color: #353430;
-  --decoration-color: var(--text-color);
-  --background-color: #fff1f7;
-  --h1-color: #ffc2e6;
-  --h2-color: var(--text-color);
-  --h3-color: var(--text-color);
-  --button-color: var(--text-color);
-  --rec-display: none;
+	--background-color: var(--color-pink-seventh, #fff1f7);
+	--background-image: url('../images/cover-image-light.png');
+	--title-color: var(--color-pink-sixth, #ffc2e6);
+	--header-text-color: var(--color-grey, #353430);
+	--decorated-color: var(--color-grey, #353430);
+	--decorated-color-40: var(--color-grey-40, #35343040);
+	--section-title-color: var(--color-grey, #353430);
+	--article-title-color: var(--color-grey, #353430);
+	--accent-color: var(--color-pink-fifth, #ff8dcb);
+	--text-color: var(--color-grey, #353430);
+	--hover-color: var(--color-pink-fourth, #353430);
+	--focus-color: var(--color-pink-fourth, #353430);
+}
+
+:root.theme-light .recording {
+	display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    --background-image: url("../images/cover-image-light.png");
-    --accent-color: #ff8dcb;
-    --accent-color-opacity: #32312d66;
-    --text-color: #353430;
-    --decoration-color: var(--text-color);
-    --background-color: #fff1f7;
-    --h1-color: #ffc2e6;
-    --h2-color: var(--text-color);
-    --h3-color: var(--text-color);
-    --button-color: var(--text-color);
-    --rec-display: none;
-  }
+	:root {
+		--background-color: var(--color-pink-seventh, #fff1f7);
+		--background-image: url('../images/cover-image-light.png');
+		--title-color: var(--color-pink-sixth, #ffc2e6);
+		--header-text-color: var(--color-grey, #353430);
+		--decorated-color: var(--color-grey, #353430);
+		--decorated-color-40: var(--color-grey-40, #35343040);
+		--section-title-color: var(--color-grey, #353430);
+		--article-title-color: var(--color-grey, #353430);
+		--accent-color: var(--color-pink-fifth, #ff8dcb);
+		--text-color: var(--color-grey, #353430);
+		--hover-color: var(--color-pink-fourth, #353430);
+		--focus-color: var(--color-pink-fourth, #353430);
+	}
 
-  .header__decoration-dark {
-    display: none;
-  }
+	.recording {
+		display: none;
+	}
 }
